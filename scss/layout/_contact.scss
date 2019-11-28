@@ -1,59 +1,27 @@
 // Styling for the contact section
-section#contact {
+section#contact, .contact-section {
   background-color: $gray-900;
   background-repeat: no-repeat;
   background-position: center;
-  padding-bottom: 25px;
+  .container {
+    padding-bottom: 25px; 
+  }
   .section-heading {
     color: $white;
   }
-  .form-group {
-    margin-bottom: 25px;
-    input,
-    textarea {
-      padding: 20px;
-    }
-    input.form-control {
-      height: auto;
-    }
-    textarea.form-control {
-      height: 248px;
-    }
-  }
-  .form-control:focus {
-    border-color: $primary;
-    box-shadow: none;
-  }
-  ::-webkit-input-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
-  }
-  :-moz-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
-  }
-  ::-moz-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
-  }
-  :-ms-input-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
-  }
-}
 
-.contact-section {
   padding: 5rem 0 0;
   .card {
     border: 0;
     border-bottom: 0.25rem solid $primary;
+
+    .card-body {
+      .small {
+        font-size: 120% !important;
+      }
+    }
     h4 {
       font-size: 0.8rem;
-      font-family: 'Varela Round';
       text-transform: uppercase;
       letter-spacing: 0.15rem;
     }
@@ -62,6 +30,8 @@ section#contact {
       border-width: 0.25rem;
       width: 3rem;
     }
+
+
   }
   .social {
     margin-top: 5rem;

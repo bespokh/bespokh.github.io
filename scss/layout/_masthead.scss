@@ -1,14 +1,26 @@
 // Styling for the masthead
 header.masthead {
+  #carouselExampleCaptions {
+    .carousel-inner {
+      height: 60vh;
+      .carousel-item.active {
+        background: linear-gradient(315deg, rgba(0,0,0,0.742734593837535) 100%, rgba(0,212,255,1) 100%);
+        min-height: 350px;
+        div {
+          margin:auto;
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,.4);
+          position: relative;
+        }
+        img {
+          position: absolute;
+        }
+      }
+    }
+  }
   text-align: center;
   color: white;
-  // background: rgb(0,0,0);
-  // background: ;
-  background-image:linear-gradient(315deg, rgba(0,0,0,0.742734593837535) 100%, rgba(0,212,255,1) 100%), url('../img/slides/slide1.jpg');
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
   .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;

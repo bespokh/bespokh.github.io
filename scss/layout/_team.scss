@@ -1,4 +1,9 @@
 // Styling for the team section
+#team {
+  .team-footer {
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.5270483193277311) 100%, rgba(9,9,9,1) 100%), url('../../img/slides/slide4.jpg');
+  }
+}
 .team-member {
   margin-bottom: 50px;
   text-align: center;
