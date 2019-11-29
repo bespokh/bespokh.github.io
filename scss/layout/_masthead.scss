@@ -3,6 +3,12 @@ header.masthead {
   #carouselExampleCaptions {
     .carousel-inner {
       height: 60vh;
+      .carousel-item {
+        img {
+          position: absolute;
+          margin: auto;
+        }
+      }
       .carousel-item.active {
         background: linear-gradient(315deg, rgba(0,0,0,0.742734593837535) 100%, rgba(0,212,255,1) 100%);
         min-height: 350px;
@@ -58,6 +64,53 @@ header.masthead {
         line-height: 75px;
         margin-bottom: 50px;
         @include heading-font;
+      }
+    }
+  }
+}
+
+@media(max-width: 414px) {
+  header.masthead {
+    #carouselExampleCaptions {
+      .carousel-inner {
+        height: 40vh;
+        img {
+          position: absolute;
+          height: 40vh;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 375px) {
+  header.masthead {
+    #carouselExampleCaptions {
+      .carousel-inner {
+        height: 40vh;
+        img {
+          position: absolute;
+          height: 40vh;
+        }
+      }
+
+      .carousel-inner {
+        .carousel-item.active {
+          background: linear-gradient(315deg, rgba(0,0,0,0.742734593837535) 100%, rgba(0,212,255,1) 100%);
+          min-height: 350px;
+          height: 40vh;
+          div {
+            margin:auto;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.4);
+            position: relative;
+          }
+          img {
+            height: 40vh;
+            position: absolute;
+          }
+        }
       }
     }
   }
