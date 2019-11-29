@@ -159,6 +159,15 @@ img::-moz-selection {
   }
 }
 
+@media (max-width: 414px) {
+  #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link.active {
+    padding-left: 10px;
+    color: #f04f56;
+    border-bottom: 0px;
+    border-left: 2px solid #f04f56;
+  }
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
@@ -275,6 +284,26 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+@media (max-width: 1024) {
+  header.masthead #carouselExampleCaptions .carousel-inner {
+    height: 50vh;
+  }
+  header.masthead #carouselExampleCaptions .carousel-inner img {
+    position: absolute;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  header.masthead #carouselExampleCaptions .carousel-inner {
+    height: 40vh;
+  }
+  header.masthead #carouselExampleCaptions .carousel-inner img {
+    position: absolute;
+    height: 40vh;
+  }
+}
+
 @media (max-width: 414px) {
   header.masthead #carouselExampleCaptions .carousel-inner {
     height: 40vh;
@@ -371,6 +400,10 @@ header.masthead .intro-text .intro-heading {
   margin: 0 0 15px;
 }
 
+#portfolio .portfolio-item .mobile-caption {
+  display: none;
+}
+
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
@@ -448,6 +481,18 @@ header.masthead .intro-text .intro-heading {
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
+  }
+  #portfolio .portfolio-item .mobile-caption {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  #portfolio .portfolio-item .portfolio-caption {
+    display: none;
+  }
+  #portfolio .portfolio-item .mobile-caption {
+    display: block;
   }
 }
 

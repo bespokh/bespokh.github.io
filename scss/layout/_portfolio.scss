@@ -6,6 +6,11 @@
   .portfolio-item {
     right: 0;
     margin: 0 0 15px;
+
+    .mobile-caption {
+      display: none;
+    }
+
     .portfolio-link {
       position: relative;
       display: block;
@@ -79,6 +84,22 @@
   #portfolio {
     .portfolio-item {
       margin: 0 0 30px;
+      .mobile-caption {
+       display: none;
+      }
+    }
+  }
+}
+
+@media(max-width: 414px) {
+  #portfolio {
+    .portfolio-item {
+      .portfolio-caption {
+        display: none;
+      }
+      .mobile-caption {
+        display: block;
+      }
     }
   }
 }

@@ -61,6 +61,24 @@
   }
 }
 
+@media(max-width: 414px) {
+  #mainNav{
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          &:hover,
+          &.active {
+            padding-left: 10px;
+            color: $primary;
+            border-bottom: 0px;
+            border-left:2px solid $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media(min-width:992px) {
   #mainNav {
     padding-top: 25px;

@@ -69,6 +69,34 @@ header.masthead {
   }
 }
 
+@media(max-width: 1024) {
+  header.masthead {
+    #carouselExampleCaptions {
+      .carousel-inner {
+        height: 50vh;
+        img {
+          position: absolute;
+          height: 50vh;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  header.masthead {
+    #carouselExampleCaptions {
+      .carousel-inner {
+        height: 40vh;
+        img {
+          position: absolute;
+          height: 40vh;
+        }
+      }
+    }
+  }
+}
+
 @media(max-width: 414px) {
   header.masthead {
     #carouselExampleCaptions {
